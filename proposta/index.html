@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light">
+<title>Proposta ODONTO SPACE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap">
+<style>
+:root{--laranja:#EE6A1F;--laranja-esc:#C9500F;--cinza:#3A3A3C;--cinza-md:#6B6B6E;--linha:#E6E1DC;--fundo:#FBF8F5;--card:#FFFFFF;--laranja-claro:#FDEBDD;
+--f:"Poppins",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--fundo);color:var(--cinza);font:400 1rem/1.6 var(--f);overflow-x:hidden}
+.sprite{position:absolute;width:0;height:0;overflow:hidden}
+.wrap{max-width:640px;margin:0 auto;padding:0 max(18px,env(safe-area-inset-left)) 0 max(18px,env(safe-area-inset-right))}
+header{background:#fff;border-bottom:1px solid var(--linha)}
+.top{display:flex;align-items:center;justify-content:space-between;padding:20px 0 18px}
+.logo{height:64px;width:auto;aspect-ratio:546.3/682;color:var(--cinza)}
+.tag{font:600 .72rem/1.2 var(--f);letter-spacing:.14em;text-transform:uppercase;color:var(--laranja)}
+.hero{padding:34px 0 38px}
+h1{margin:10px 0 14px;font:800 clamp(1.7rem,7vw,2.3rem)/1.12 var(--f);color:var(--cinza);letter-spacing:-.01em}
+h1 em{font-style:normal;color:var(--laranja)}
+.sub{margin:0;color:var(--cinza-md);font-size:1.02rem}
+section{padding:38px 0 6px}
+h2{margin:8px 0 14px;font:700 1.45rem/1.2 var(--f);color:var(--cinza)}
+h2::after{content:"";display:block;width:44px;height:4px;margin-top:10px;background:var(--laranja);border-radius:2px}
+p{margin:0 0 14px}
+.stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin:18px 0}
+.stat{background:var(--card);border:1px solid var(--linha);border-radius:14px;padding:16px 10px;text-align:center}
+.stat b{display:block;font:800 1.45rem/1 var(--f);color:var(--laranja)}
+.stat span{display:block;margin-top:8px;font-size:.74rem;line-height:1.3;color:var(--cinza-md)}
+.callout{background:var(--laranja-claro);border-left:4px solid var(--laranja);border-radius:10px;padding:16px 18px;margin:18px 0}
+.flow{list-style:none;margin:20px 0;padding:0}
+.flow li{position:relative;background:var(--card);border:1px solid var(--linha);border-radius:14px;padding:16px 18px 16px 62px;margin-bottom:22px}
+.flow li::before{content:attr(data-n);position:absolute;left:16px;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;background:var(--laranja);color:#fff;font:700 1rem/34px var(--f);text-align:center}
+.flow li:not(:last-child)::after{content:"";position:absolute;left:32px;bottom:-22px;width:2px;height:22px;background:var(--laranja)}
+.flow b{display:block;color:var(--cinza)}
+.flow span{font-size:.92rem;color:var(--cinza-md)}
+.btn{display:flex;align-items:center;justify-content:center;width:100%;min-height:56px;padding:0 22px;border-radius:14px;border:2px solid var(--laranja);font:700 1rem/1.2 var(--f);text-decoration:none;text-align:center;cursor:pointer;transition:transform .15s}
+.btn:active{transform:scale(.98)}
+.btn-p{background:var(--laranja);color:#fff}
+.btn-s{background:#fff;color:var(--laranja-esc)}
+.btn:focus-visible{outline:3px solid var(--cinza);outline-offset:3px}
+.tabela{background:var(--card);border:1px solid var(--linha);border-radius:14px;overflow:hidden;margin:16px 0}
+.row{display:flex;justify-content:space-between;gap:14px;padding:15px 18px;border-top:1px solid var(--linha);align-items:flex-start}
+.row:first-child{border-top:0}
+.row .n{min-width:0}
+.row .n b{display:block;color:var(--cinza)}
+.row .n span{font-size:.85rem;color:var(--cinza-md)}
+.row .v{font:700 1rem/1.3 var(--f);color:var(--cinza);text-align:right;white-space:nowrap}
+.row.tot{background:var(--laranja-claro)}
+.row.tot .v{color:var(--laranja-esc)}
+.nota{font-size:.84rem;color:var(--cinza-md)}
+.lista{list-style:none;margin:14px 0;padding:0}
+.lista li{position:relative;padding:12px 0 12px 34px;border-top:1px solid var(--linha)}
+.lista li:last-child{border-bottom:1px solid var(--linha)}
+.lista li::before{content:"";position:absolute;left:4px;top:19px;width:14px;height:14px;border-radius:50%;background:var(--laranja)}
+.cta{background:var(--cinza);color:#fff;margin-top:44px;padding:36px 0 40px}
+.cta h2{color:#fff}
+.cta p{color:#D7D3CF}
+.cta .btn-s{background:transparent;color:#fff;border-color:#fff}
+.cta .btns{display:grid;gap:12px;margin-top:20px}
+footer{background:#fff;border-top:1px solid var(--linha);padding:26px 0 calc(30px + env(safe-area-inset-bottom));text-align:center}
+.assina{font:700 1.05rem/1.2 var(--f);color:var(--cinza)}
+.assina span{color:var(--laranja)}
+.assina small{display:block;margin-top:4px;font:600 .66rem/1.2 var(--f);letter-spacing:.16em;text-transform:uppercase;color:var(--laranja)}
+.exclusivo{margin-top:12px;font-size:.78rem;color:var(--cinza-md)}
+@media (max-width:380px){.stats{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <defs><pattern id="hatch" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="9" style="stroke:var(--fg)" stroke-width="1.6" opacity=".35"/></pattern></defs>
+  <symbol id="logo-full" viewBox="0 0 546.3 682.0"><path fill="currentColor" fill-rule="evenodd" d="M445.0 545.0 L444.7 673.3 L445.7 674.0 L541.7 673.7 L541.7 646.7 L479.0 646.7 L478.0 645.7 L478.0 624.3 L479.0 623.3 L526.0 623.0 L526.0 594.7 L479.0 594.3 L478.0 593.3 L478.0 572.3 L479.0 571.3 L540.7 571.3 L541.0 545.3Z M242.3 545.0 L240.0 551.0 L239.0 555.7 L237.0 560.7 L236.0 565.3 L234.0 570.3 L233.0 575.0 L231.0 580.0 L202.3 673.7 L235.3 673.7 L238.7 660.3 L240.3 657.0 L279.0 657.0 L280.0 658.0 L284.0 673.7 L284.7 674.0 L318.7 673.7 L318.7 671.7 L317.7 670.0 L316.7 665.3 L314.7 660.3 L313.7 655.7 L298.7 609.0 L294.7 594.7 L293.7 593.0 L279.3 545.7 L278.7 545.0Z M259.3 584.7 L261.0 586.3 L264.0 599.0 L272.7 629.3 L271.0 630.3 L248.7 630.3 L247.7 629.7 L248.7 624.0Z M118.3 545.0 L118.0 673.0 L118.3 673.7 L119.7 674.0 L151.0 674.0 L151.7 673.7 L151.7 627.3 L152.3 626.7 L174.0 626.7 L183.0 625.7 L191.0 623.7 L195.7 621.7 L202.3 617.3 L208.7 610.3 L211.7 604.7 L213.7 598.7 L214.7 592.7 L214.7 580.3 L213.3 572.7 L211.7 567.7 L209.7 564.0 L206.3 559.3 L202.3 555.3 L194.0 550.0 L185.3 547.0 L172.3 545.0Z M151.7 572.0 L152.3 571.3 L165.3 571.3 L172.0 572.7 L175.7 574.7 L179.0 578.3 L181.0 584.0 L181.0 589.3 L180.0 593.0 L178.0 596.0 L174.3 599.0 L167.3 601.0 L152.3 601.0 L151.7 600.3Z M379.3 541.0 L366.0 543.0 L359.7 545.0 L353.3 548.0 L341.7 556.0 L334.0 564.0 L327.0 574.7 L321.3 589.3 L319.0 602.3 L319.0 616.7 L321.0 629.0 L326.0 642.7 L331.0 651.3 L339.0 660.7 L348.0 667.7 L360.3 673.7 L371.7 676.7 L385.7 677.3 L393.0 676.7 L401.7 674.7 L409.3 671.7 L415.0 668.7 L423.7 662.3 L429.7 656.0 L434.3 649.3 L406.7 628.0 L400.0 635.3 L396.3 638.0 L389.3 641.0 L385.7 641.7 L379.0 641.7 L372.3 640.0 L368.3 638.0 L364.3 635.0 L358.7 628.7 L355.7 623.3 L353.7 618.0 L352.7 612.7 L352.7 605.7 L353.7 600.0 L355.7 594.0 L359.7 587.3 L365.3 581.7 L372.7 577.7 L378.3 576.3 L383.0 576.0 L393.0 577.7 L399.3 580.7 L402.0 582.7 L407.3 588.7 L408.0 588.7 L432.3 568.3 L433.7 566.3 L430.3 562.0 L423.7 555.3 L418.3 551.3 L410.7 547.0 L403.0 544.0 L395.0 542.0Z M42.3 542.0 L32.7 545.0 L23.7 550.0 L16.0 557.3 L13.0 561.7 L10.3 567.3 L8.0 576.0 L8.0 590.3 L10.0 598.7 L12.0 603.0 L15.0 607.3 L19.0 611.3 L24.7 615.3 L36.7 620.7 L46.0 623.7 L62.3 627.7 L69.3 630.7 L73.0 634.7 L73.0 639.7 L72.0 641.7 L69.7 644.0 L64.7 646.0 L49.3 646.0 L34.0 642.0 L27.0 639.0 L19.3 634.7 L4.0 661.3 L9.7 665.3 L18.3 669.7 L26.0 672.7 L36.3 675.7 L51.3 677.7 L61.3 677.7 L75.0 675.7 L83.7 672.7 L91.0 668.7 L98.3 662.0 L101.7 657.3 L104.7 651.0 L106.7 642.7 L106.7 627.0 L104.7 619.0 L102.7 614.7 L99.7 610.3 L95.3 606.0 L86.0 600.0 L79.0 597.0 L70.0 594.0 L54.3 590.0 L46.3 587.0 L42.7 584.0 L41.7 582.0 L41.7 578.7 L42.7 576.3 L46.7 572.7 L52.3 571.3 L60.0 571.3 L66.3 572.0 L73.7 573.7 L81.0 576.7 L89.0 582.0 L90.0 582.0 L105.3 556.0 L101.3 553.0 L92.3 548.0 L78.3 543.0 L66.0 541.0 L48.7 541.0Z M353.0 430.0 L352.3 430.7 L353.0 446.0 L372.7 446.0 L373.7 447.0 L373.7 503.7 L374.7 504.3 L392.7 504.0 L392.7 447.0 L393.7 446.0 L413.3 446.0 L414.0 445.0 L414.0 430.7 L413.3 430.0Z M287.7 430.0 L287.3 503.7 L305.7 504.0 L305.7 463.0 L306.7 462.7 L330.3 503.0 L331.7 504.3 L347.7 504.0 L348.0 430.7 L347.3 430.0 L329.0 430.3 L329.0 466.7 L328.3 467.3 L307.3 430.3Z M142.3 430.0 L142.3 504.0 L167.0 504.0 L174.0 503.3 L183.7 500.7 L191.7 496.3 L195.3 493.0 L199.3 487.7 L202.3 481.0 L203.7 476.0 L204.3 470.3 L204.3 461.3 L203.7 456.0 L201.7 449.3 L198.7 443.7 L192.7 437.3 L189.0 435.0 L182.0 432.0 L170.3 430.0Z M162.0 445.0 L169.7 445.7 L177.0 448.7 L181.3 452.7 L182.7 454.7 L185.0 461.3 L185.0 471.3 L184.0 475.7 L182.0 480.0 L177.3 485.0 L171.0 488.0 L166.3 488.7 L162.0 488.7 L161.3 488.0 L161.3 445.7Z M444.7 428.3 L441.3 429.0 L433.7 432.0 L425.3 438.3 L421.0 443.7 L417.0 451.3 L415.0 458.0 L414.3 463.0 L414.3 471.7 L415.0 476.7 L417.0 483.3 L420.3 490.0 L423.0 493.7 L429.3 499.7 L434.3 502.7 L443.3 505.7 L450.0 506.3 L458.0 505.7 L464.7 503.7 L472.7 499.0 L476.7 495.3 L481.7 488.3 L484.7 481.3 L486.3 473.7 L486.7 463.7 L485.7 456.7 L483.3 449.7 L478.7 441.7 L473.3 436.0 L469.3 433.0 L463.3 430.0 L456.7 428.3Z M448.3 448.0 L453.0 448.0 L456.0 448.7 L459.7 450.7 L464.0 455.0 L467.0 462.0 L467.0 472.0 L465.0 477.0 L463.0 480.0 L458.3 484.0 L452.7 486.0 L447.3 485.7 L441.3 483.0 L436.7 478.0 L433.7 470.7 L433.7 463.3 L434.7 459.7 L436.7 455.7 L440.7 451.3 L442.7 450.0Z M239.3 428.3 L232.7 430.0 L226.7 433.0 L220.3 438.0 L215.0 444.7 L212.0 450.7 L210.0 456.7 L209.0 462.3 L209.3 474.3 L211.0 481.7 L214.0 488.3 L219.3 495.7 L224.0 499.7 L229.0 502.7 L238.0 505.7 L245.0 506.3 L252.7 505.7 L259.3 503.7 L266.0 500.0 L271.3 495.3 L276.3 488.3 L278.7 483.3 L280.7 476.0 L281.3 470.0 L280.7 458.3 L278.7 451.3 L275.3 444.7 L271.7 439.7 L264.0 433.0 L258.0 430.0 L251.3 428.3Z M243.0 448.0 L247.7 448.0 L254.3 450.7 L257.0 453.0 L259.7 456.7 L262.0 464.0 L262.0 470.0 L261.0 474.0 L259.0 478.0 L257.0 480.7 L253.0 484.0 L247.3 486.0 L243.3 486.0 L239.7 485.0 L235.3 482.3 L230.7 477.0 L228.7 472.3 L228.3 470.0 L228.7 461.7 L230.7 456.7 L232.3 454.3 L237.7 449.7Z M94.0 428.3 L86.7 430.3 L81.0 433.3 L77.3 436.0 L70.0 444.3 L67.0 450.0 L65.0 455.7 L63.7 466.7 L64.0 474.0 L66.3 483.0 L69.3 489.3 L73.0 494.3 L78.3 499.3 L86.0 503.7 L92.7 505.7 L100.0 506.3 L107.7 505.7 L116.3 502.7 L121.3 499.7 L126.7 494.7 L130.3 489.7 L133.7 482.7 L135.7 475.0 L135.7 459.7 L133.7 452.0 L130.3 445.0 L127.0 440.3 L120.7 434.3 L115.0 431.0 L109.7 429.0 L104.0 428.0Z M98.0 448.0 L105.3 448.7 L110.0 451.3 L113.0 454.3 L115.0 457.7 L116.7 463.7 L117.0 467.7 L116.0 473.7 L113.0 479.3 L109.3 483.0 L102.3 486.0 L98.0 486.0 L94.3 485.0 L89.7 482.0 L85.7 477.3 L83.7 473.0 L83.0 469.3 L83.7 461.0 L85.7 456.3 L91.0 450.7 L94.7 448.7Z M116.7 183.0 L112.3 187.7 L110.3 193.3 L111.0 201.7 L114.0 211.3 L127.0 241.7 L138.0 269.3 L155.0 305.7 L163.0 320.3 L169.0 329.7 L173.0 335.0 L180.0 341.3 L181.3 340.7 L183.7 338.0 L190.7 326.0 L196.7 312.3 L208.7 281.0 L215.7 266.7 L222.7 255.7 L227.7 249.7 L233.0 244.7 L239.3 240.7 L247.3 238.7 L254.3 239.7 L259.0 241.7 L266.0 248.3 L270.0 256.0 L272.0 262.7 L274.0 275.0 L274.7 294.0 L274.0 314.0 L272.0 336.7 L270.3 367.0 L271.0 385.3 L273.3 395.0 L276.0 394.7 L281.7 391.3 L286.3 387.3 L294.3 378.7 L309.7 358.0 L327.7 329.3 L352.7 284.0 L371.7 245.3 L387.7 208.0 L391.7 196.3 L393.7 188.3 L393.7 185.3 L392.7 184.3 L383.3 179.0 L367.3 172.0 L349.7 166.0 L335.3 162.0 L312.3 157.0 L293.0 154.0 L269.3 152.0 L242.3 152.0 L226.7 153.0 L208.0 155.0 L184.3 159.0 L163.7 164.0 L145.0 170.0 L127.0 177.0Z M411.7 40.7 L406.7 31.3 L401.3 24.0 L394.3 17.0 L385.7 11.0 L377.7 7.3 L369.3 5.0 L360.3 4.0 L349.3 5.0 L339.3 8.0 L330.0 13.0 L324.3 17.3 L301.0 39.0 L287.7 50.3 L274.3 59.7 L262.3 66.0 L247.7 71.0 L225.0 75.0 L209.3 76.3 L191.3 76.0 L183.7 74.0 L181.7 73.0 L181.3 72.0 L184.7 69.7 L199.7 64.7 L221.3 59.7 L246.0 52.7 L249.7 49.7 L251.7 44.0 L248.3 42.0 L239.0 40.0 L216.3 39.0 L205.3 37.0 L190.7 32.0 L161.3 20.0 L143.7 15.0 L137.3 14.0 L124.7 14.0 L114.0 17.0 L105.7 22.3 L98.0 31.0 L93.0 40.7 L90.0 51.3 L88.0 66.3 L88.0 94.7 L91.0 124.0 L96.0 149.3 L97.3 162.3 L97.0 164.7 L94.0 170.7 L82.0 186.7 L79.0 192.0 L95.3 177.7 L110.7 167.0 L133.3 154.7 L152.3 146.7 L178.0 138.7 L200.7 133.7 L221.7 130.7 L249.3 129.0 L277.3 129.7 L303.3 132.7 L327.7 137.7 L350.7 144.7 L370.0 152.7 L387.3 161.7 L411.0 176.7 L426.7 189.7 L409.7 166.0 L406.7 160.0 L406.0 156.7 L406.7 149.0 L410.3 137.0 L414.7 118.0 L418.7 90.7 L419.0 78.7 L418.7 69.0 L417.7 61.3 L414.7 48.7Z"/></symbol>
+  <symbol id="logo-symbol" viewBox="0 0 351.7 395.0"><path fill="currentColor" fill-rule="evenodd" d="M39.7 181.0 L35.3 185.7 L33.3 191.3 L34.0 199.7 L37.0 209.3 L50.0 239.7 L61.0 267.3 L78.0 303.7 L86.0 318.3 L92.0 327.7 L96.0 333.0 L103.0 339.3 L104.3 338.7 L106.7 336.0 L113.7 324.0 L119.7 310.3 L131.7 279.0 L138.7 264.7 L145.7 253.7 L150.7 247.7 L156.0 242.7 L162.3 238.7 L170.3 236.7 L177.3 237.7 L182.0 239.7 L189.0 246.3 L193.0 254.0 L195.0 260.7 L197.0 273.0 L197.7 292.0 L197.0 312.0 L195.0 334.7 L193.3 365.0 L194.0 383.3 L196.3 393.0 L199.0 392.7 L204.7 389.3 L209.3 385.3 L217.3 376.7 L232.7 356.0 L250.7 327.3 L275.7 282.0 L294.7 243.3 L310.7 206.0 L314.7 194.3 L316.7 186.3 L316.7 183.3 L315.7 182.3 L306.3 177.0 L290.3 170.0 L272.7 164.0 L258.3 160.0 L235.3 155.0 L216.0 152.0 L192.3 150.0 L165.3 150.0 L149.7 151.0 L131.0 153.0 L107.3 157.0 L86.7 162.0 L68.0 168.0 L50.0 175.0Z M334.7 38.7 L329.7 29.3 L324.3 22.0 L317.3 15.0 L308.7 9.0 L300.7 5.3 L292.3 3.0 L283.3 2.0 L272.3 3.0 L262.3 6.0 L253.0 11.0 L247.3 15.3 L224.0 37.0 L210.7 48.3 L197.3 57.7 L185.3 64.0 L170.7 69.0 L148.0 73.0 L132.3 74.3 L114.3 74.0 L106.7 72.0 L104.7 71.0 L104.3 70.0 L107.7 67.7 L122.7 62.7 L144.3 57.7 L169.0 50.7 L172.7 47.7 L174.7 42.0 L171.3 40.0 L162.0 38.0 L139.3 37.0 L128.3 35.0 L113.7 30.0 L84.3 18.0 L66.7 13.0 L60.3 12.0 L47.7 12.0 L37.0 15.0 L28.7 20.3 L21.0 29.0 L16.0 38.7 L13.0 49.3 L11.0 64.3 L11.0 92.7 L14.0 122.0 L19.0 147.3 L20.3 160.3 L20.0 162.7 L17.0 168.7 L5.0 184.7 L2.0 190.0 L18.3 175.7 L33.7 165.0 L56.3 152.7 L75.3 144.7 L101.0 136.7 L123.7 131.7 L144.7 128.7 L172.3 127.0 L200.3 127.7 L226.3 130.7 L250.7 135.7 L273.7 142.7 L293.0 150.7 L310.3 159.7 L334.0 174.7 L349.7 187.7 L332.7 164.0 L329.7 158.0 L329.0 154.7 L329.7 147.0 L333.3 135.0 L337.7 116.0 L341.7 88.7 L342.0 76.7 L341.7 67.0 L340.7 59.3 L337.7 46.7Z"/></symbol>
+</svg>
+
+<header>
+  <div class="wrap">
+    <div class="top">
+      <svg class="logo" viewBox="0 0 546.3 682" role="img" aria-label="ODONTO SPACE"><use href="#logo-full"/></svg>
+      <span class="tag">Proposta</span>
+    </div>
+    <div class="hero">
+      <span class="tag">Renovação da campanha</span>
+      <h1>Da campanha de Prótese para <em>Implante</em></h1>
+      <p class="sub">Mesma verba, estratégia nova: uma página exclusiva que prepara o paciente antes do WhatsApp.</p>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section>
+    <span class="tag">1 · Onde estamos</span>
+    <h2>O que a campanha de Prótese entregou</h2>
+    <p>Resultado dos últimos 30 dias (22/09 a 21/10).</p>
+    <div class="stats">
+      <div class="stat"><b>50</b><span>conversas iniciadas</span></div>
+      <div class="stat"><b>R$ 13</b><span>por conversa, em média</span></div>
+      <div class="stat"><b>R$ 666</b><span>investidos no período</span></div>
+    </div>
+    <div class="callout">
+      <b>O ponto de atenção:</b> contato barato não é paciente na cadeira. O público estava aberto demais e atraiu muitos curiosos. Ainda falta saber quantas dessas conversas viraram <b>avaliação marcada</b>, e é esse número que decide o resultado.
+    </div>
+  </section>
+
+  <section>
+    <span class="tag">2 · O que muda</span>
+    <h2>Foco em implante, com filtro</h2>
+    <p>O implante tem valor mais alto e rende mais por paciente. E, em vez de mandar a pessoa direto para o WhatsApp, o anúncio passa por uma página própria da ODONTO SPACE.</p>
+    <ol class="flow">
+      <li data-n="1"><b>Anúncio</b><span>Fala com quem perdeu um ou mais dentes, sem promessa de resultado.</span></li>
+      <li data-n="2"><b>Página exclusiva</b><span>Explica os 4 tratamentos e faz poucas perguntas rápidas.</span></li>
+      <li data-n="3"><b>WhatsApp</b><span>A equipe recebe a conversa já com as respostas e agenda a avaliação. O orçamento é sem compromisso.</span></li>
+    </ol>
+    <p>Com a página no nosso controle, o Meta Pixel acompanha cada etapa e mostramos quanto custa, de verdade, cada avaliação.</p>
+    <a class="btn btn-p" href="https://marcelooliveira-ia.github.io/prev-os-4m8t2q/" target="_blank" rel="noopener">Ver a página de implante</a>
+  </section>
+
+  <section>
+    <span class="tag">3 · Investimento</span>
+    <h2>Valores mensais</h2>
+    <div class="tabela">
+      <div class="row"><div class="n"><b>Anúncios (Meta)</b><span>R$ 300 direto no WhatsApp + R$ 300 na página, para comparar</span></div><div class="v">R$ 600</div></div>
+      <div class="row"><div class="n"><b>Domínio próprio</b><span>Ex.: implante.odontospace.com.br · cobrança anual</span></div><div class="v">~ R$ 40 / ano</div></div>
+      <div class="row"><div class="n"><b>Hospedagem da página</b><span>Valor aproximado</span></div><div class="v">~ R$ 10 a 30 / mês</div></div>
+      <div class="row tot"><div class="n"><b>Custo extra da página</b><span>Fora a verba de anúncios</span></div><div class="v">~ R$ 13 a 34 / mês</div></div>
+    </div>
+    <p class="nota">Os valores de domínio e hospedagem são aproximados e podem variar conforme o plano contratado. A verba de anúncios continua a mesma de hoje.</p>
+  </section>
+
+  <section>
+    <span class="tag">4 · Como testamos</span>
+    <h2>2 a 3 semanas de teste</h2>
+    <p>Rodamos os dois caminhos ao mesmo tempo, com a mesma verba, e comparamos o <b>custo por avaliação marcada</b>. Ficamos só com o que funcionar.</p>
+  </section>
+
+  <section>
+    <span class="tag">5 · Próximos passos</span>
+    <h2>O que preciso de você</h2>
+    <ul class="lista">
+      <li><b>Nome do responsável técnico e CRO</b><br><span class="nota">Vão no rodapé da página, por exigência do CFO.</span></li>
+      <li><b>Registro da origem dos pacientes</b><br><span class="nota">A recepção anota de onde veio cada paciente e se marcou e compareceu.</span></li>
+      <li><b>Seu ok</b><br><span class="nota">Para seguirmos com domínio e hospedagem.</span></li>
+    </ul>
+  </section>
+</main>
+
+<div class="cta">
+  <div class="wrap">
+    <h2>Vamos seguir?</h2>
+    <p>Toque em um dos botões e a conversa abre direto no meu WhatsApp.</p>
+    <div class="btns">
+      <a class="btn btn-p" href="https://wa.me/5521990800215?text=Ol%C3%A1%2C%20Marcelo%21%20Aprovo%20a%20proposta%20de%20implante%20para%20a%20ODONTO%20SPACE%20e%20quero%20seguir." target="_blank" rel="noopener">Aprovar a proposta</a>
+      <a class="btn btn-s" href="https://wa.me/5521990800215?text=Ol%C3%A1%2C%20Marcelo%21%20Vi%20a%20proposta%20de%20implante%20da%20ODONTO%20SPACE%20e%20gostaria%20de%20ajustar%20alguns%20pontos." target="_blank" rel="noopener">Quero ajustar algo</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="assina">Marcelo <span>Oliveira</span><small>Marketing Digital &amp; IA</small></div>
+    <p class="exclusivo">Proposta exclusiva, desenvolvida por Marcelo Oliveira, Estratégia de Marketing Digital e IA.</p>
+  </div>
+</footer>
+</body>
+</html>
